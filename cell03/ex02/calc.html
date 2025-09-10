@@ -7,10 +7,8 @@
 <body>
   <h2>Simple Calculator</h2>
 
-  <!-- Input left operand -->
   <input type="text" id="left" placeholder="Left number">
 
-  <!-- Operator -->
   <select id="operator">
     <option value="+">+</option>
     <option value="-">-</option>
@@ -19,10 +17,8 @@
     <option value="%">%</option>
   </select>
 
-  <!-- Input right operand -->
   <input type="text" id="right" placeholder="Right number">
 
-  <!-- Button -->
   <input type="submit" value="Try me!" onclick="calculate()">
 
   <script>
@@ -31,18 +27,15 @@
       let right = document.getElementById("right").value;
       let operator = document.getElementById("operator").value;
 
-      // แปลงค่าเป็นตัวเลข
       let a = parseInt(left, 10);
       let b = parseInt(right, 10);
 
-      // ตรวจสอบว่าเป็นจำนวนเต็มบวกหรือไม่
       if (isNaN(a) || isNaN(b) || a < 0 || b < 0) {
         alert("Error :(");
         console.log("Error :(");
         return;
       }
 
-      // เช็คหารศูนย์หรือ mod ศูนย์
       if ((operator === "/" || operator === "%") && b === 0) {
         alert("It's over 9000!");
         console.log("It's over 9000!");
@@ -62,7 +55,6 @@
       console.log(result);
     }
 
-    // Alert ทุก 30 วิ
     setInterval(() => {
       alert("Please, use me...");
     }, 30000);
