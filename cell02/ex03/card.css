@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.login {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.desc {
+  color: gray;
+  font-size: 14px;
+}
+
+.place {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.social img {
+  width: 24px;
+  margin: 5px;
+}
+
+.button button {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background: #333;
+}
