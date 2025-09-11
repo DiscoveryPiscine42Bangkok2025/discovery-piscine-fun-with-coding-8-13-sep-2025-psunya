@@ -27,14 +27,14 @@
       let right = document.getElementById("right").value;
       let operator = document.getElementById("operator").value;
 
-      let a = parseInt(left, 10);
-      let b = parseInt(right, 10);
-
-      if (isNaN(a) || isNaN(b) || a < 0 || b < 0) {
+       if (!/^\d+$/.test(left) || !/^\d+$/.test(right)) {
         alert("Error :(");
         console.log("Error :(");
         return;
       }
+
+      let a = parseInt(left, 10);
+      let b = parseInt(right, 10);
 
       if ((operator === "/" || operator === "%") && b === 0) {
         alert("It's over 9000!");
