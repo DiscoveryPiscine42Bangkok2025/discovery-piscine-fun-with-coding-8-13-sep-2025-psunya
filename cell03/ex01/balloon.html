@@ -24,7 +24,6 @@
     let colors = ["red", "green", "blue"];
     let colorIndex = 0;
 
-    // คลิก = ขยาย + เปลี่ยนสี
     balloon.addEventListener("click", () => {
       size += 10;
       colorIndex = (colorIndex + 1) % colors.length;
@@ -39,7 +38,6 @@
       balloon.style.backgroundColor = colors[colorIndex];
     });
 
-    // เมาส์ออก = หด + เปลี่ยนสีถอยหลัง
     balloon.addEventListener("mouseleave", () => {
       if (size > 200) {
         size -= 5;
